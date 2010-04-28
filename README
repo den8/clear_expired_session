@@ -12,5 +12,13 @@ $ ./script/runner 'Session.clear_expired 30.minutes'
 
 上記のコードをcronなどに登録して定期的にセッションをクリアすると良いです。
 
+Install
+=======
+
+RAILS_ROOT上で次のコードを実行して下さい
+
+./script/plugin install git@github.com:den8/clear_expired_session.git
+
+
 
 Copyright (c) 2010 [name of plugin creator], released under the MIT license

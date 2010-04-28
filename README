@@ -1,13 +1,16 @@
 ClearExpireSession
 ==================
 
-Introduction goes here.
-
+ActiveRecord Session Storeを使っている場合、一定期間が過ぎたセッションを消去してくれるプラグインです。
 
 Example
 =======
 
-Example goes here.
+script/runner 上で次のように実行します
+
+$ ./script/runner 'Session.clear_expired 30.minutes'
+
+上記のコードをcronなどに登録して定期的にセッションをクリアすると良いです。
 
 
 Copyright (c) 2010 [name of plugin creator], released under the MIT license
